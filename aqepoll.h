@@ -27,8 +27,8 @@ aqwait(int queue,
 
 extern inline int
 aqadd(int queue,
-     int fd,
-     void *data) {
+      int fd,
+      void *data) {
   struct epoll_event event;
   memset(&event, 0, sizeof(struct epoll_event));
 

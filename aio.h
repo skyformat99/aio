@@ -4,7 +4,9 @@
 #define AIO_H_
 
 #ifdef __APPLE__
-#error "macOS not implemented"
+#include <sys/event.h>
+typedef struct kevent aqevent_t;
+
 #elif __linux__
 #include <sys/epoll.h>
 typedef struct epoll_event aqevent_t;

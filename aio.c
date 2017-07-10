@@ -19,7 +19,7 @@
   }
 
 #ifdef __APPLE__
-#error "macOS not implemented"
+#include "aqkqueue.h"
 #elif __linux__
 #include "aqepoll.h"
 #else
